@@ -1,10 +1,13 @@
 <script id="1552846141">
       //Determine state of doc load in order to affect DOM with buttons
-      document.addEventListener("readystatechange", (event) => {
-      if (event.target.readyState === "interactive" || event.target.readyState === "complete") {
+
+	if (!localStorage.BFTest) {break;}
+	if (localStorage.BFTest == 'true') {
+	document.addEventListener("readystatechange", (event) => {
+      if (event.target.readyState === "complete") {
                     getProductInfo();
             }
-        });
+        })};
      </script>
      <a data-display-type="block" class="u_BF48446630 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://sartoriallounge.made-to-order.com/redirect.aspx?type=select-size&idcs=608&orderid=e2a65cbc-3616-481a-89b7-b3c61f62ad8a&idc=16085" dmle_widget="dudaButtonLinkId" data-element-type="dButtonLinkId" id="BF48446630">
       <span class="iconBg" aria-hidden="true" id="BF59539565">
