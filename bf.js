@@ -2,6 +2,7 @@
       //Determine state of doc load in order to affect DOM with buttons
 (function () {
 	//IIEF = Auto launching js (Need Duda vs Instasite vs HTML5 versions?)
+	alert("Tried to launch script auto ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]");
 	if (localStorage.BFTest == 'true') {
 	document.addEventListener("readystatechange", (event) => {
       if (event.target.readyState === "complete") {
