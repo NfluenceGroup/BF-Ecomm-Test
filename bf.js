@@ -1,7 +1,15 @@
-<script id="1552846141">
+ <script id="1552846141">
       //Determine state of doc load in order to affect DOM with buttons
+(function () {
+	//IIEF = Auto launching js (Need Duda vs Instasite vs HTML5 versions?)
+	if (localStorage.BFTest == 'true') {
+	document.addEventListener("readystatechange", (event) => {
+      if (event.target.readyState === "complete") {
+                    getProductInfo();
+            }
+        })};};
+})();
 
-	if (!localStorage.BFTest) {
 	if (localStorage.BFTest == 'true') {
 	document.addEventListener("readystatechange", (event) => {
       if (event.target.readyState === "complete") {
