@@ -44,8 +44,6 @@
        getProductInfo
       </span>
      </a>
-     <!-- <script id="1085578645" src="https://app.ecwid.com/script.js?96407503">
-     </script> -->
      <script id="1907469342">
       localStorage.setItem("Category","4323234");
         localStorage.setItem("ProductID","10125");
@@ -88,18 +86,18 @@
 //	.catch(error => error)
       }
      </script>
-     <!--     <script id="1851970170">
+ /*    <!--     <script id="1851970170">
       /* See if this is a BESPOKE category 
         Try to send it to log first to see if it is code OR text */
         /* grab the second element which is the Add to Bag Button */
         /* document.getElementsByClassName("details-product-purchase__add-buttons").appendChild(document.getElementById("1848759033"));*/
-Ecwid.OnPageLoaded.add(function(page){
+/*Ecwid.OnPageLoaded.add(function(page){
   console.log("Current page is of type: " + page.type);
 });
         const node = document.getElementsByClassName("details-product-purchase__add-buttons").lastChild;
         const NewNode = node.cloneNode(true);
         console.log("*************" + node.className);
-        /* node.setAttribute("class" */
+        node.setAttribute("class" );
         window.localStorage.setItem("show_ec_logs","true");
         for (let i = 0; i < elements.length; i++) {
         if (NewNode[i].tagName == "BUTTON") {
@@ -108,7 +106,7 @@ Ecwid.OnPageLoaded.add(function(page){
         };
         NewNode.setAttribute("id", "BFShoeBuy");
         document.getElementsByClassName("details-product-purchase__add-buttons").appendChild(NewNode);
-     </script> -->
+    </script> */
      <script id="1256045056">
       function Clicker() {
              Ecwid.OnPageLoaded.add(function(page) {alert("page " + page.productId );
